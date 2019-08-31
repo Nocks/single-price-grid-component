@@ -20,6 +20,14 @@ body {
   height: 100%;
 }
 
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
 body {
   font-family: $primary-font;
   font-size: 1rem;
@@ -53,6 +61,7 @@ button:focus {
 }
 
 .container {
+  min-height: 100vh;
 
 }
 
@@ -123,6 +132,7 @@ button:focus {
               font-size: 1.2em;
               font-weight: bold;
               width: 100%;
+              cursor: pointer;
               margin-top: 0.7em;
               border-radius: 8px;
               -webkit-box-shadow: 1px 2px 10px 1px rgba(128,128,128,1);
@@ -194,4 +204,157 @@ footer {
     a:active {
       color: hsl(228, 45%, 44%);
     }
+}
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) {
+
+  .top-section {
+    padding: 2.5em 3.5em;
+
+      .subscription-title {
+        font-size: 4em;
+      }
+
+      .subscription-tagline {
+        font-size: 2.34em;
+      }
+
+      .sign-up-message {
+        font-size: 1.6em;
+          span {
+            display: block;
+          }
+
+          span + span {
+            margin-top: 0.8em;
+          }
+      }
+  }
+
+  .bottom-section {
+
+    display: flex;
+
+      .details-first-wrapper {
+        flex: 1 1 50%;
+
+          .details-first-inner {
+            padding: 3em 3.5em;
+
+              h3 {
+                font-size: 2.34em;
+              }
+
+              .subscription-details.first {
+                margin-top: 1em;
+                margin-bottom: 1.5em;
+
+                  .price {
+                    font-size: 3.2em;
+                  }
+
+                  .subscription-duration {
+                    font-size: 1.3em;
+                  }
+              }
+
+                  .subscription-details.second {
+                    font-size: 1.3em;
+                  }
+
+                  button {
+                    font-size: 1.4em;
+                  }
+          }
+      }
+
+      .details-second-wrapper {
+        flex: 1 1 50%;
+        margin-top: 0;
+
+          .details-second-inner {
+            padding: 3em 3.5em;
+
+              h3 {
+                font-size: 2.34em;
+                margin-top: 10px;
+                margin-bottom: 10px;
+              }
+
+              .details {
+                font-size: 1.3em;
+              }
+          }
+      }
+
+  }
+
+  footer {
+    font-size: 0.750em;
+
+    .attribution span {
+      display: inline;
+    }
+  }
+
+}
+
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  //CSS
+
+}
+
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  //CSS
+
 }

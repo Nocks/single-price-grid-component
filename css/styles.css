@@ -13,6 +13,14 @@ body {
   height: 100%;
 }
 
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+}
+
 body {
   font-family: "Karla", sans-serif;
   font-size: 1rem;
@@ -43,6 +51,10 @@ a:active, a:focus {
 
 button:focus {
   outline: none;
+}
+
+.container {
+  min-height: 100vh;
 }
 
 .top-section {
@@ -105,6 +117,7 @@ button:focus {
   font-size: 1.2em;
   font-weight: bold;
   width: 100%;
+  cursor: pointer;
   margin-top: 0.7em;
   border-radius: 8px;
   -webkit-box-shadow: 1px 2px 10px 1px gray;
@@ -162,5 +175,101 @@ footer a:hover {
 footer a:active {
   color: #3e52a3;
 }
+
+/*
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/*
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) {
+  .top-section {
+    padding: 2.5em 3.5em;
+  }
+  .top-section .subscription-title {
+    font-size: 4em;
+  }
+  .top-section .subscription-tagline {
+    font-size: 2.34em;
+  }
+  .top-section .sign-up-message {
+    font-size: 1.6em;
+  }
+  .top-section .sign-up-message span {
+    display: block;
+  }
+  .top-section .sign-up-message span + span {
+    margin-top: 0.8em;
+  }
+
+  .bottom-section {
+    display: flex;
+  }
+  .bottom-section .details-first-wrapper {
+    flex: 1 1 50%;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner {
+    padding: 3em 3.5em;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner h3 {
+    font-size: 2.34em;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner .subscription-details.first {
+    margin-top: 1em;
+    margin-bottom: 1.5em;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner .subscription-details.first .price {
+    font-size: 3.2em;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner .subscription-details.first .subscription-duration {
+    font-size: 1.3em;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner .subscription-details.second {
+    font-size: 1.3em;
+  }
+  .bottom-section .details-first-wrapper .details-first-inner button {
+    font-size: 1.4em;
+  }
+  .bottom-section .details-second-wrapper {
+    flex: 1 1 50%;
+    margin-top: 0;
+  }
+  .bottom-section .details-second-wrapper .details-second-inner {
+    padding: 3em 3.5em;
+  }
+  .bottom-section .details-second-wrapper .details-second-inner h3 {
+    font-size: 2.34em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .bottom-section .details-second-wrapper .details-second-inner .details {
+    font-size: 1.3em;
+  }
+
+  footer {
+    font-size: 0.75em;
+  }
+  footer .attribution span {
+    display: inline;
+  }
+}
+/*
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+/*
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+/*
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+/*
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
 
 /*# sourceMappingURL=styles.css.map */
